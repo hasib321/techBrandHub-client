@@ -7,7 +7,6 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import BrandProductDetails from "../Pages/BrandProductDetails/BrandProductDetails";
 import SingleProducts from "../Pages/SingleProducts/SingleProducts";
-import User from "../Pages/User/User";
 import UpdateProduct from "../Pages/UpdateProduct/UpdateProduct";
 import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
@@ -66,11 +65,7 @@ const myRouter = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
-      {
-        path: "/user",
-        element: <User></User>,
-        loader: () => fetch(`http://localhost:5000/user`),
-      },
+
       {
         path: "/products/updateProduct/:id",
         element: (
