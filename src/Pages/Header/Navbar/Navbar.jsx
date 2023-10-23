@@ -121,20 +121,27 @@ const Navbar = () => {
 
         {user ? (
           <div className="navbar-end ">
-            <label tabIndex={0} className="btn btn-ghost btn-circle avatar ">
-              <div className="w-10 rounded-full">
-                <img src={user.photoURL} alt="" />
+            <div className="flex justify-center items-center">
+              <div className="lg:flex  lg:items-center md:flex md:items-center">
+                <label
+                  tabIndex={0}
+                  className="btn btn-ghost btn-circle avatar "
+                >
+                  <div className="w-10 rounded-full">
+                    <img src={user.photoURL} alt="" />
+                  </div>
+                </label>
+                {user && (
+                  <span className="text-white mr-2">{user.displayName}</span>
+                )}
               </div>
-            </label>
-            {user && (
-              <span className="text-white mr-2">{user.displayName}</span>
-            )}
-            <button
-              onClick={handleLogout}
-              className=" text-white bg-[#02c173] px-7 py-3 rounded-full font-semibold"
-            >
-              Sign Out
-            </button>
+              <button
+                onClick={handleLogout}
+                className=" text-white bg-[#02c173] px-7 py-3 rounded-full font-semibold"
+              >
+                Sign Out
+              </button>
+            </div>
           </div>
         ) : (
           <div className="navbar-end ">
