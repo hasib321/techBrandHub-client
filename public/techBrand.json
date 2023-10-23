@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "image": "https://i.ibb.co/WKsM5WS/photo-1585184394271-4c0a47dc59c9-auto-format-fit-max-q-80-crop-faces-edges-cs-tinysrgb-fm-jpg-ixid-M.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Samsung",
+    "image": "https://i.ibb.co/3CmFZ8t/Samsung-logo.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sony",
+    "image": "https://i.ibb.co/Swm1b6X/85193.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Google",
+    "image": "https://i.ibb.co/bWFB6Qq/993fcd282fdce29e6f2f6f633966fb1c-impolicy-wcms-crop-resize-crop-H-1688-crop-W-3000-x-Pos-0-y-Pos-94.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Intel",
+    "image": "https://i.ibb.co/fqgqscz/3a4713d0-ed98-11ea-8b3d-4e1e3ba3751f.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Tesla",
+    "image": "https://i.ibb.co/RQnsdxc/acastro-STK086-03.jpg"
+  }
+]
