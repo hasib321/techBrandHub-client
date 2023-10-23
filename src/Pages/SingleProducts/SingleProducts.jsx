@@ -31,13 +31,16 @@ const SingleProducts = () => {
       image,
       brandName,
     };
-    fetch(`http://localhost:5000/user`, {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(brandUser),
-    })
+    fetch(
+      ` https://technology-brand-kmb6k88ol-md-hasibuzzamans-projects.vercel.app/user`,
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(brandUser),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {

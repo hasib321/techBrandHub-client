@@ -15,9 +15,12 @@ const CartProduct = ({ cart, setCurrentCart, currentCart }) => {
 
   //for delete product from cart
   const handleDelete = (_id) => {
-    fetch(`http://localhost:5000/user/${_id}`, {
-      method: "DELETE",
-    })
+    fetch(
+      ` https://technology-brand-kmb6k88ol-md-hasibuzzamans-projects.vercel.app/user/${_id}`,
+      {
+        method: "DELETE",
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.deletedCount > 0) {

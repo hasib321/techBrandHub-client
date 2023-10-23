@@ -29,13 +29,16 @@ const AddProducts = () => {
     console.log(newProduct);
 
     // send data to the server
-    fetch("http://localhost:5000/products", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(newProduct),
-    })
+    fetch(
+      " https://technology-brand-kmb6k88ol-md-hasibuzzamans-projects.vercel.app/products",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(newProduct),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {

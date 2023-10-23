@@ -39,14 +39,16 @@ const myRouter = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/products/${params.brandName}/${params.id}`
+            ` https://technology-brand-kmb6k88ol-md-hasibuzzamans-projects.vercel.app/products/${params.brandName}/${params.id}`
           ),
       },
       {
         path: "/products/:brandName",
         element: <BrandProductDetails></BrandProductDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.brandName}`),
+          fetch(
+            ` https://technology-brand-kmb6k88ol-md-hasibuzzamans-projects.vercel.app/products/${params.brandName}`
+          ),
       },
       {
         path: "/myCart",
@@ -55,7 +57,10 @@ const myRouter = createBrowserRouter([
             <MyCart></MyCart>
           </PrivateRoute>
         ),
-        loader: () => fetch(`http://localhost:5000/user`),
+        loader: () =>
+          fetch(
+            ` https://technology-brand-kmb6k88ol-md-hasibuzzamans-projects.vercel.app/user`
+          ),
       },
       {
         path: "/login",
@@ -74,7 +79,9 @@ const myRouter = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/updateProduct/${params.id}`),
+          fetch(
+            ` https://technology-brand-kmb6k88ol-md-hasibuzzamans-projects.vercel.app/products/updateProduct/${params.id}`
+          ),
       },
     ],
   },
