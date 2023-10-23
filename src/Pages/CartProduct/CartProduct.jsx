@@ -13,6 +13,7 @@ const CartProduct = ({ cart, setCurrentCart, currentCart }) => {
     userEmail,
   } = cart;
 
+  //for delete product from cart
   const handleDelete = (_id) => {
     fetch(`http://localhost:5000/user/${_id}`, {
       method: "DELETE",
