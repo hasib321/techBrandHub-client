@@ -13,7 +13,7 @@ const Progressbar = () => {
           </p>
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5">
           <div className="text-center ">
             <div
               className="radial-progress bg-primary text-center text-primary-content border-4 border-primary"
