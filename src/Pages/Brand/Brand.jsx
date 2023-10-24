@@ -5,7 +5,6 @@ const Brand = ({ brand }) => {
 
   return (
     <div>
-      <div></div>
       <div>
         <div className="relative ">
           <figure className=" h-64">

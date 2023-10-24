@@ -9,7 +9,7 @@ const AddProducts = () => {
     const form = event.target;
 
     const name = form.name.value;
-    const brandName = form.brand.value;
+    const brandName = form.brand.value.toUpperCase();
     const type = form.type.value;
     const price = form.price.value;
     const shortDescription = form.shortDescription.value;
